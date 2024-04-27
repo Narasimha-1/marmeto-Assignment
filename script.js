@@ -38,6 +38,7 @@ async function fetchData(){
         const sele=document.getElementById("sele")
         const selcectedData=data.product.options[1]
         selcectedData.values.map(each=>{
+            
             const input=document.createElement("input")
             input.setAttribute("type","radio");
             input.setAttribute("id",each)
@@ -53,6 +54,31 @@ async function fetchData(){
         const description=document.getElementById("description")
         const desc=data.product.description
         description.innerHTML=desc;
+
+        const message=document.getElementById("cartMessage")
+
+        addtoCart = () => {
+            let p = document.createElement("p");
+            p.textContent = "Embrace Sideboard with Color Yellow and Size Small added to cart";
+            message.appendChild(p);
+        
+            setTimeout(() => {
+                message.removeChild(p);
+            }, 3000); // 3000 milliseconds (3 seconds) delay before removing the message
+        };
+
+        minus=()=>{
+            const num=parseInt(document.getElementById("num").value)
+
+            num.textContent=num-1
+        }
+
+        add=()=>{
+            const num=parseInt(document.getElementById("num").value)
+
+            num.textContent=num+1
+        }
+
     }
 
     catch(error){

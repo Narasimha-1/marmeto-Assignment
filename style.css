@@ -7,6 +7,7 @@
 
 .inp{
     background-color: black;
+    height: ;
 
 }
 
@@ -32,6 +33,8 @@
 
 .container2{
     margin-left: 100px;
+    padding:10px;
+    font-family: Inter;
 }
 
 
@@ -49,25 +52,47 @@
     display: flex;
 }
 
-.quantity{
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    background-color: blueviolet;
-    padding:5px;
-    border-radius: 20px;
-    height: 40px;
-}
-
 .button{
-    background-color: blue;
-    height: 100px;
-    width:100px;
+    background-color: #3A4980;;
+    height: 50px;
+    width: 220px;
     color:white;
+    border: none;
     border-radius: 16px;
     padding:5px;
 }
 
 #description{
     padding:10px;
+}
+
+.buttonContainer{
+    margin-left: 100px;
+    height:50px;
+    width:70px;
+}
+
+.cartContainer{
+    display: flex;
+    margin-top: 40px;
+}
+
+p{
+    color: #B9BBBF;
+}
+
+#compare{
+    text-decoration: line-through;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #B9BBBF;
+    border-radius: 20px;
+    color:black;
+    height:40px;
+    width:100px;
 }
