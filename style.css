@@ -1,0 +1,73 @@
+.smallConta{
+    height:50px;
+    width:50px;
+    margin-left: 10px;
+
+}
+
+.inp{
+    background-color: black;
+
+}
+
+.image{
+    height:500px;
+    width:500px;
+
+}
+
+/* 
+#imgLi{
+    width: 300px;
+    height: 300px;
+} */
+
+.containers{
+    padding:30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.container2{
+    margin-left: 100px;
+}
+
+
+.priceContainer{
+    display: flex;
+}
+
+.red{
+    color:red;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#col{
+    display: flex;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    background-color: blueviolet;
+    padding:5px;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.button{
+    background-color: blue;
+    height: 100px;
+    width:100px;
+    color:white;
+    border-radius: 16px;
+    padding:5px;
+}
+
+#description{
+    padding:10px;
+}

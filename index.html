@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="containers">
+        <div class="container1">
+            <img src="../images/Rectangle 4.png"  class="image" />
+            <div>
+                <img src="../images/Rectangle 5.png" class="smallImage"/>
+                <img src="../images/Rectangle 6.png" class="smallImage"/>
+                
+                <img src="../images/Rectangle 8.png" class="smallImage"/>
+                
+                <img src="../images/Group 4.png" class="smallImage"/>
+            </div>
+        </div>
+
+        <div class="container2">
+                <p id="vendor"></p>
+                <h1 id="title"></h1>
+                <div class="priceContainer">
+                    <h1 id="price"></h1>
+                    <p class="red">35% OFF</p>
+                </div>
+                
+                <p id="compare"></p>
+                <p>choose a color</p>
+                <div id="col">
+
+                </div>
+                <p>Choose a Size</p>
+                <div id="sele">
+
+                </div>
+                <div class="quantity">
+                    <p onclick="minus()">-</p>
+                    <h3 id="num">1</h3>
+                    <p onclick="add()">+</p>
+
+                    <script>
+                        
+                        function minus(){
+                            const num=parseInt(document.getElementById("num").value)
+
+                            num.textContent=num-1
+                        }
+                        function add(){
+                            const num=parseInt(document.getElementById("num").value)
+
+                            num.textContent=num+1
+                        }
+
+                    </script>
+
+                    <!-- <div>
+
+                        <button class="button">Add to Cart</button>
+                    
+
+                    </div> -->
+
+
+                 </div>
+
+                 <div id="description">
+
+                 </div>
+
+        </div>
+    </div>
+  </body>
+</html>
